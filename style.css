@@ -1,3 +1,4 @@
+/* styling af billeder */
 img {
   width: 100%;
   display: block;
@@ -7,7 +8,6 @@ img {
 }
 
 /* hero billede */
-
 .hero_img{
   padding: 0;
   margin: 0;
@@ -23,13 +23,10 @@ img {
 
 main{
     background-color: antiquewhite;
-    min-height: 100vh; /* Gør at main fylder mindst hele skærmens højde */
 }
 
-body{
-    min-height: 100vh; /* Gør at main fylder mindst hele skærmens højde */ 
-}
 
+/* menu */
 
 * {
   margin: 0;
@@ -52,9 +49,9 @@ header {
 .logo img {
   width: 100px;
   height: 100px;
-  width: auto; /* Sætter en standardbredde (eller en specifik værdi) */
-  object-fit: none; /* Ændrer object-fit, så billederne ikke bliver beskåret */
-  padding: 0; /* Hvis der er noget padding på menu- eller footer-billederne, kan du fjerne det */
+  width: auto;
+  object-fit: none; /* så billederne ikke bliver beskåret */
+  padding: 0;
 }
 
 nav {
@@ -170,41 +167,42 @@ nav {
 footer{
     background-color: #FCECDC;
     padding: 20px;
-    text-align: center;  /* Centrerer tekst og billeder horisontalt */
+    text-align: center; /* horisontalt */
 
 }
 
 
 .logo_footer{
-    width: auto;  /* Angiver en fleksibel bredde på logoet */
+    width: auto;  /* fleksibel bredde logoet */
     height: auto;  /* Bevarer proportionerne af logoet */
-    margin: 0 auto;  /* Centrerer logoet */
-    display: block;  /* Gør logoet til et blok-element, så margin kan virke */
+    margin: 0 auto;  /* Center logoet */
+    display: block;  /* blok-element, så margin kan virke */
 
 }
 
 .tekst_footer{
    display: grid;
     grid-template-rows: auto auto;
-    justify-items: center; /* Center the items horizontally */
-    gap: 20px; /* Adds space between rows */
+    justify-items: center; /* horisontalt */
+    gap: 20px;
 }
 
+/* ikon og a styling footer */
 .social{
     display: flex;
-    align-items: center; /* Centers items vertically */
-    justify-content: center; /* Ensures items are horizontally centered */
+    align-items: center; /* vertikalt */
+    justify-content: center; /* horisontalt */
 }
 
 .social img{
-     margin-right: 10px; /* Adds space between image and text */
+     margin-right: 10px;
 }
 
 .social a{
-    text-align: center; /* Centers the text under the image */
+    text-align: center;
 }
 
-/* skrift */
+/* Styling af skrift */
 
 h1{
     font-family: Noto Sans SC;
@@ -244,17 +242,19 @@ li{
  font-family: EB Garamond;
     color: #28266F;
     margin-bottom: 1rem;
-    font-size: 1rem;   
+    font-size: 1rem;
+    margin-left: 25px;   
 }
 
+/* Media for indhold */
 
 @media (min-width: 1024px) {
    .grid_1-1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
-    
-    
+
+
    } 
    
 
@@ -273,13 +273,13 @@ li{
   }
 
   .knap1{
-    
-     width: fit-content; /* Sørg for, at knappen kun fylder indholdets bredde */
+
+     width: fit-content; /* knappen kun fylder indholdets bredde */
      height: fit-content;
-     align-self: center; /* Centrer knappen vertikalt */
-     justify-self: center; /* Centrer knappen horisontalt */
-     font-size: 3rem;
-    
+     align-self: center; /* vertikalt */
+     justify-self: center; /* horisontalt */
+
+
   }
 
   .grid_2-3 {
@@ -293,7 +293,7 @@ li{
 
 
 .border {
-        height: auto; /* Undgå fast højde for overlap */
+    height: auto; /* ingen fast højde for overlap */
     }
 
   .grid_1-1-1{
@@ -303,32 +303,35 @@ li{
   }
 
 .grid_3 {
-    display: grid; /* Aktiverer CSS Grid layout */
-    grid-template-columns: 1fr 1fr; /* To kolonner */
-    grid-template-rows: auto auto; /* To rækker */
-   
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    
     
 }
 
 .grid_3 .border:nth-child(1) {
-    grid-column: 1; /* Uddannelse i venstre kolonne */
-    grid-row: 1; /* Første række */
+    grid-column: 1; /* venstre kolonne */
+    grid-row: 1; /* første række */
 }
 
 .grid_3 .border:nth-child(3) {
-    grid-column: 1; /* Interesser i venstre kolonne */
-    grid-row: 2; /* Anden række */
+    grid-column: 1; /* venstre kolonne */
+    grid-row: 2; /* anden række */
 }
 
 .grid_3 .border:nth-child(2) {
-    grid-column: 2; /* Kompetencer i højre kolonne */
-    grid-row: 1 / span 2; /* Strækker sig over begge rækker */
+    grid-column: 2; /* højre kolonne */
+    grid-row: 1 / span 2; /* første række - fylder 2 */
 }
 
+
+/* profil tekst */
 .profilt{
   align-items: center;
 }
 
+/* profil billede */
 .profilb{
   width: 75%;
 }
@@ -337,6 +340,7 @@ li{
   width: 40%;
 }
 
+/* sociale ikoner footer */
 .ikon{
   width: 60%;
 }
@@ -366,21 +370,24 @@ a{
 
 /* baggrund og border/stroke */
 
+/* orange farve bag tekst */
 .orangeb{
     background-color: #FBBA8D;
     padding: 20px;
 }
 
+/* stroke om tekst */
 .border{
     border: 3px solid #28266F;
     background-color: transparent;
     padding: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 25px;
+    margin-right: 25px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+/* stroke om tekst center */
 .border2{
     border: 3px solid #28266F;
     background-color: transparent;
@@ -392,11 +399,12 @@ a{
     text-align: center;
 }
 
+/* orange tom linje i bunden */
 .farvet-line {
-    border: 0;  /* Fjerner den standard kant på <hr> */
-    height: 50px;  /* Definerer højden af linjen */
-    background-color: #FBBA8D;  /* Farven på linjen (ændre til ønsket farve) */
-    width: 100%;  /* Bestemmer bredden på linjen, her 50% af containeren */
+    border: 0;
+    height: 50px; 
+    background-color: #FBBA8D;
+    width: 100%;
     
 }
 
@@ -410,7 +418,7 @@ a{
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
-    font-size: 16px; /* Standard tekststørrelse for mobil */
+    font-size: 25px;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
