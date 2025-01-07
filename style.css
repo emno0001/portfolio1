@@ -42,7 +42,7 @@ header {
   align-items: center;
   padding: 20px;
   background-color: #FCECDC;
-  z-index: 1000;
+  z-index: 1000; /* øverst */
   
 }
 
@@ -173,10 +173,10 @@ footer{
 
 
 .logo_footer{
-    width: auto;  /* fleksibel bredde logoet */
-    height: auto;  /* Bevarer proportionerne af logoet */
-    margin: 0 auto;  /* Center logoet */
-    display: block;  /* blok-element, så margin kan virke */
+    width: auto;  /* fleksibel bredde */
+    height: auto;  /*  proportionerne */
+    margin: 0 auto;  /* Center */
+    display: block; 
 
 }
 
@@ -231,7 +231,7 @@ p{
 }
 
 a{
-  font-family: 'EB Garamond', serif; /* Brug korrekt skrifttypenavn */
+  font-family: 'EB Garamond', serif; 
   color: #28266F;
   margin-bottom: 1rem;
   font-size: 1rem;
@@ -274,7 +274,7 @@ li{
 
   .knap1{
 
-     width: fit-content; /* knappen kun fylder indholdets bredde */
+     width: fit-content; /* fylder indholdets bredde */
      height: fit-content;
      align-self: center; /* vertikalt */
      justify-self: center; /* horisontalt */
@@ -293,7 +293,7 @@ li{
 
 
 .border {
-    height: auto; /* ingen fast højde for overlap */
+    height: auto; /* ingen overlap */
     }
 
   .grid_1-1-1{
